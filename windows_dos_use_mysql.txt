@@ -1,0 +1,18 @@
+run cmd
+net start mysql
+	启用mysql
+	DOS命令窗口中输入 或者win + R直接输入后回车。（另附：关闭的命令为net stop mysql）
+mysql -hlocalhost -uroot -p
+	其中-h表示服务器名，localhost表示本地；-u为数据库用户名，
+	root是mysql默认用户名；-p为密码，如果设置了密码，可直接在-p后链接输入，
+	如：-p123456，用户没有设置密码，显示Enter password时，直接回车即可。
+show databases;
+	显示你有的数据库（mysql数据库中的命令必须以分号结尾“；”）
+use [database];
+	使用数据库
+show tables;
+	使用表
+desc [table];
+	显示表的详细信息；
+exit;
+	退出
