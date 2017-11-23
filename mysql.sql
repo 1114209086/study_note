@@ -17,3 +17,8 @@ PRIMARY KEY (id)
 )ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 	创建数据表
+
+INSERT INTO table_name ( field1, field2,...fieldN )
+                       VALUES
+                       ( value1, value2,...valueN )
+	插入数据的语法
