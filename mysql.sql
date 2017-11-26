@@ -22,6 +22,8 @@ INSERT INTO 表名 ( field1, field2,...fieldN )
                        VALUES
                        ( value1, value2,...valueN )
 	插入数据的语法
+INSERT INTO table_name  (field1, field2,...fieldN)  VALUES  (valueA1,valueA2,...valueAN),(valueB1,valueB2,...valueBN),(valueC1,valueC2,...valueCN)......;
+	插入多条数据
 
 SELECT * FROM 表名;
 	查询表里面所有的数据
@@ -57,3 +59,6 @@ SELECT table1.field , table2.field FROM table1 LEFT JOIN table2 ON table1.field 
 
 SELECT table1.field , table2.field FROM table1 RIGHT JOIN table2 ON table1.field = table2.field;
 	右外联查询
+
+DROP TABLE 表名;
+	删除表
