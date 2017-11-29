@@ -59,6 +59,11 @@ SELECT table1.field , table2.field FROM table1 LEFT JOIN table2 ON table1.field 
 
 SELECT table1.field , table2.field FROM table1 RIGHT JOIN table2 ON table1.field = table2.field;
 	右外联查询
+UPDATE table_name SET field1=new-value1, field2=new-value2 [WHERE Clause]
+	更改数据;
+
+UPDATE runoob_tbl SET runoob_title = REPLACE(runoob_title, 'C++', 'Python') where runoob_id = 3;
+	更新 runoob_id 为 3 的runoob_title 字段值的 "C++" 替换为 "Python"：
 
 DROP TABLE 表名;
 	删除表
