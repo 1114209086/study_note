@@ -65,5 +65,22 @@ UPDATE table_name SET field1=new-value1, field2=new-value2 [WHERE Clause]
 UPDATE runoob_tbl SET runoob_title = REPLACE(runoob_title, 'C++', 'Python') where runoob_id = 3;
 	更新 runoob_id 为 3 的runoob_title 字段值的 "C++" 替换为 "Python"：
 
+SELECT field1, field2,...fieldN FROM table_name WHERE field1 LIKE condition1 [AND [OR]] filed2 = 'somevalue'
+
+
+
+
+
+
+
+
+
+
+
+
+
+DELETE FROM table_name [WHERE Clause]
+	删除数据，如果没有指定条件删除所有记录
+
 DROP TABLE 表名;
 	删除表
