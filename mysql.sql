@@ -66,9 +66,25 @@ UPDATE runoob_tbl SET runoob_title = REPLACE(runoob_title, 'C++', 'Python') wher
 	更新 runoob_id 为 3 的runoob_title 字段值的 "C++" 替换为 "Python"：
 
 SELECT field1, field2,...fieldN FROM table_name WHERE field1 LIKE condition1 [AND [OR]] filed2 = 'somevalue'
+	LIKE 通常与 % 一同使用，类似于一个元字符的搜索。
 
+SELECT expression1, expression2, ... expression_n
+    FROM tables
+    [WHERE conditions]
+    UNION [ALL | DISTINCT]
+    SELECT expression1, expression2, ... expression_n
+    FROM tables
+    [WHERE conditions];
+	expression1, expression2, ... expression_n: 要检索的列。
 
+	tables: 要检索的数据表。
 
+	WHERE conditions: 可选， 检索条件。
+	
+	DISTINCT: 可选，删除结果集中重复的数据。默认情况下 UNION 操作符已经删除了重复数据，所以 DISTINCT 修饰符对结果没啥影响。
+	
+	ALL: 可选，返回所有结果集，包含重复数据。
+   
 
 
 
