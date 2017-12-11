@@ -40,6 +40,7 @@ SELECT * FROM 表名 [WHERE 条件] [ ORDER BY  field1 [DESC/ASC],field2 [DESC/A
 	查询按照排序
 SELECT * FROM 表名 ORDER BY mark DESC LIMIT 2,2 
 	查询成绩第三四名的学生
+	LIMIT 用于分组查询
 SELECT count(1) FROM 表名;
 	统计总条数；
 SELECT field，count(1) FROM 表名 GROUP BY field;
@@ -85,7 +86,9 @@ SELECT expression1, expression2, ... expression_n
 	
 	ALL: 可选，返回所有结果集，包含重复数据。
    
-
+SELECT * FROM table_name WHERE field IS NULL
+SELECT * FROM table_name WHERE field IS NOT NULL
+	查询空值或非空用这个
 
 
 
