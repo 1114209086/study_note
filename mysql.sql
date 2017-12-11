@@ -105,6 +105,11 @@ SELECT name FROM person_tbl WHERE name REGEXP '^s';
 	{n}：n 是一个非负整数。匹配确定的 n 次。例如，'o{2}' 不能匹配 "Bob" 中的 'o'，但是能匹配 "food" 中的两个 o。
 	{n,m}：m 和 n 均为非负整数，其中n <= m。最少匹配 n 次且最多匹配 m 次
 
+事务：1 用BEGIN、ROLLBACK、COMMIT
+      2 用SET AUTOCOMMIT=0禁止自动提交
+        用SET AUTOCOMMIT=1开启自动提交
+
+
 
 
 
