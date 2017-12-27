@@ -27,7 +27,7 @@ INSERT INTO table_name  (field1, field2,...fieldN)  VALUES  (valueA1,valueA2,...
 
 SELECT * FROM 表名;
 	查询表里面所有的数据
-SELCT field1, field2 FROM 表名;
+SELECT field1, field2 FROM 表名;
 	查询表里面的field1, field2数据
 SELECT DISTINCT field1 FROM 表名;
 	查询表里面的field1不重复的数据，如果是field1，field2 就是field1不同或者field2也不同的
